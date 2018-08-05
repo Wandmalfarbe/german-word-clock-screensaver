@@ -5,48 +5,124 @@
 const allNodeList = document.querySelectorAll('*');
 const allElements = Array.prototype.slice.call(allNodeList, 0);
 
-const prefixElements = document.querySelectorAll('.prefix');
-const suffixElements = document.querySelectorAll('.suffix');
-
 function el(selector) {
-	return document.querySelector(selector);
+	return document.querySelectorAll(selector);
 }
 
 function setClockElOn(selector) {
-	el(selector).classList.add('on');
-}
-
-function setPrefixElOn(number) {
-	prefixElements[number - 1].classList.add('on');
-}
-
-function setSuffixElOn(number) {
-	if (parseInt(number, 10) === 13) {
-		number = 1;
-	}
-	suffixElements[number - 1].classList.add('on');
+	el(selector).forEach(function(elm) {
+		elm.classList.add('on');
+	});
 }
 
 function setMinutes(minutes) {
-	minutes = minutes.toString().split('');
+	const minutesSecond = minutes % 10;
+	const minutesFirst  = (minutes - minutesSecond) / 10;
 
-	switch (parseInt(minutes[0], 10)) { // eslint-disable-line default-case
+	switch (minutesFirst) { // eslint-disable-line default-case
+		case 0:
+			if(minutesSecond > 4) {
+				setClockElOn('.fuenf-minuten');
+				setClockElOn('.nach');
+			} else {
+				setClockElOn('.uhr');
+			}
+			break;
+		case 1:
+			if(minutesSecond < 5) {
+				setClockElOn('.zehn-minuten');
+			} else {
+				setClockElOn('.viertel');
+			}
+			setClockElOn('.nach');
+			break;
 		case 2:
-			setClockElOn('.twenty-minutes');
+			setClockElOn('.zwanzig-minuten');
+			setClockElOn('.nach');
 			break;
 		case 3:
-			setClockElOn('.thirty-minutes');
+			setClockElOn('.halb');
 			break;
 		case 4:
-			setClockElOn('.forty-minutes');
+			if(minutesSecond < 5) {
+				setClockElOn('.zwanzig-minuten');
+			} else {
+				setClockElOn('.viertel');
+			}
+			setClockElOn('.vor');
 			break;
 		case 5:
-			setClockElOn('.fifty-minutes');
+			if(minutesSecond < 5) {
+				setClockElOn('.zehn-minuten');
+			} else {
+				setClockElOn('.fuenf-minuten');
+			}
+			setClockElOn('.vor');
 			break;
 	}
+}
 
-	if (minutes % 10 !== 0) {
-		setSuffixElOn(parseInt(minutes[1], 10));
+function setHour(hours, minutes) {
+
+	let hoursSecond = hours % 10;
+	const hoursFirst  = (hours - hoursSecond) / 10;
+
+	const minutesSecond = minutes % 10;
+	const minutesFirst  = (minutes - minutesSecond) / 10;
+
+	if(minutesFirst === 3) {
+		hoursSecond++;
+	}
+
+	if(hoursFirst === 0) { // eslint-disable-line default-case
+		switch (hoursSecond) { // eslint-disable-line default-case
+			case 1:
+				if(minutesFirst == 0 && minutesSecond < 5) {
+					setClockElOn('.ein');
+				} else {
+					setClockElOn('.eins');
+				}
+				break;
+			case 2:
+				setClockElOn('.zwei');
+				break;
+			case 3:
+				setClockElOn('.drei');
+				break;
+			case 4:
+				setClockElOn('.vier');
+				break;
+			case 5:
+				setClockElOn('.fuenf');
+				break;
+			case 6:
+				setClockElOn('.sechs');
+				break;
+			case 7:
+				setClockElOn('.sieben');
+				break;
+			case 8:
+				setClockElOn('.acht');
+				break;
+			case 9:
+				setClockElOn('.neun');
+				break;
+		}
+	} else {
+		switch (hoursSecond) { // eslint-disable-line default-case
+			case 0:
+				setClockElOn('.zehn');
+				break;
+			case 1:
+				setClockElOn('.elf');
+				break;
+			case 2:
+				setClockElOn('.zwoelf');
+				break;
+			case 3:
+				setClockElOn('.eins');
+				break;
+		}
 	}
 }
 
@@ -60,116 +136,28 @@ function clearClock() {
 ----------------------------------------------------------------------------- */
 function updateClock() {
 	const date = new Date();
-	let hour = date.getHours();
+	let hours = date.getHours();
 	const minutes = date.getMinutes();
 
+	/*let hours = 22;
+	let minutes = 55;*/
+
 	// Convert 24 hour time to 12 hour
-	if (hour >= 13) {
-		hour -= 12;
+	if (hours >= 13) {
+		hours -= 12;
 	}
-	if (parseInt(hour, 10) === 0) {
-		hour = 12;
+	if (parseInt(hours, 10) === 0) {
+		hours = 12;
 	}
 
 	// 'Turn off' all clock elements
 	clearClock();
 
-	// One minute past [hour]
-	if (parseInt(minutes, 10) === 1) {
-		setClockElOn('.one');
-		setClockElOn('.minute');
-		setClockElOn('.past');
-		setSuffixElOn(hour);
-		return;
-	}
-
-	// [minutes] past [hour]
-	if (minutes <= 12 && minutes >= 2) {
-		setPrefixElOn(minutes);
-		setClockElOn('.minutes');
-		setClockElOn('.past');
-		setSuffixElOn(hour);
-		return;
-	}
-
-	switch (minutes) { // eslint-disable-line default-case
-		// [hour] o'clock
-		case 0:
-			setPrefixElOn(hour);
-			setClockElOn('.oclock');
-			return;
-		// [hour] [minutes]
-		case 13:
-			setPrefixElOn(hour);
-			setClockElOn('.thirteen');
-			return;
-		case 14:
-			setPrefixElOn(hour);
-			setClockElOn('.fourteen');
-			return;
-		case 16:
-			setPrefixElOn(hour);
-			setClockElOn('.sixteen');
-			return;
-		case 17:
-			setPrefixElOn(hour);
-			setClockElOn('.seventeen');
-			return;
-		case 18:
-			setPrefixElOn(hour);
-			setClockElOn('.eighteen');
-			return;
-		case 19:
-			setPrefixElOn(hour);
-			setClockElOn('.nineteen');
-			return;
-		// Quarter past [hour]
-		case 15:
-			setClockElOn('.quarter');
-			setClockElOn('.past');
-			setSuffixElOn(hour);
-			return;
-		// Twenty past [hour]
-		case 20:
-			setClockElOn('.twenty');
-			setClockElOn('.past');
-			setSuffixElOn(hour);
-			return;
-		// Half past [hour]
-		case 30:
-			setClockElOn('.half');
-			setClockElOn('.past');
-			setSuffixElOn(hour);
-			return;
-		// Half to [next hour]
-		case 40:
-			setClockElOn('.twenty');
-			setClockElOn('.to');
-			setSuffixElOn(hour + 1);
-			return;
-		// Quarter to [next hour]
-		case 45:
-			setClockElOn('.quarter');
-			setClockElOn('.to');
-			setSuffixElOn(hour + 1);
-			return;
-		// Ten to [next hour]
-		case 50:
-			setClockElOn('.ten');
-			setClockElOn('.to');
-			setSuffixElOn(hour + 1);
-			return;
-		// Five to [next hour]
-		case 55:
-			setClockElOn('.five');
-			setClockElOn('.to');
-			setSuffixElOn(hour + 1);
-			return;
-	}
-
-	// [hour] [minutes]
-	setPrefixElOn(hour);
+	setClockElOn('.es');
+	setClockElOn('.ist');
+	
 	setMinutes(minutes);
+	setHour(hours, minutes);
 }
 
 /** Tick / init

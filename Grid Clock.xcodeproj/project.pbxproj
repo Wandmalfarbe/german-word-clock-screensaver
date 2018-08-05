@@ -289,7 +289,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.grid-clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.grid-clock";
 				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = saver;
 			};
@@ -303,7 +303,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.grid-clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.grid-clock";
 				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = saver;
 			};
