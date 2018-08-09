@@ -15,23 +15,24 @@
 		5038C1E6211C827700BCAC4A /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DD211C827700BCAC4A /* thumbnail@2x.png */; };
 		5038C1E7211C827700BCAC4A /* thumbnail_source.png in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DE211C827700BCAC4A /* thumbnail_source.png */; };
 		5038C1EC211C83EF00BCAC4A /* Webview in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1EB211C83EF00BCAC4A /* Webview */; };
-		77996CD91C94B825006B0FF7 /* GridClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 77996CD81C94B825006B0FF7 /* GridClock.m */; };
+		5038C1EF211C928000BCAC4A /* GermanWordClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5038C1ED211C928000BCAC4A /* GermanWordClock.m */; };
+		5038C1F0211C928000BCAC4A /* GermanWordClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5038C1EE211C928000BCAC4A /* GermanWordClock.h */; };
 		77AD4D312041E44A001100EC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AD4D302041E44A001100EC /* AppKit.framework */; };
 		77AD4D332041F756001100EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AD4D322041F756001100EC /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A40066818B53112005F43A6 /* Grid Clock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grid Clock.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A40066818B53112005F43A6 /* German Word Clock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "German Word Clock.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A40066D18B53113005F43A6 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		3A40068218B53129005F43A6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		3A95A94B18EA12D30036779C /* GridClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridClock.h; sourceTree = SOURCE_ROOT; };
 		5038C1DA211C827700BCAC4A /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		5038C1DB211C827700BCAC4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5038C1DC211C827700BCAC4A /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		5038C1DD211C827700BCAC4A /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		5038C1DE211C827700BCAC4A /* thumbnail_source.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail_source.png; sourceTree = "<group>"; };
 		5038C1EB211C83EF00BCAC4A /* Webview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Webview; sourceTree = "<group>"; };
-		77996CD81C94B825006B0FF7 /* GridClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridClock.m; sourceTree = SOURCE_ROOT; };
+		5038C1ED211C928000BCAC4A /* GermanWordClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GermanWordClock.m; sourceTree = "<group>"; };
+		5038C1EE211C928000BCAC4A /* GermanWordClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GermanWordClock.h; sourceTree = "<group>"; };
 		77AD4D302041E44A001100EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		77AD4D322041F756001100EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -64,7 +65,7 @@
 		3A40066918B53112005F43A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A40066818B53112005F43A6 /* Grid Clock.saver */,
+				3A40066818B53112005F43A6 /* German Word Clock.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,8 +84,8 @@
 		3A40067318B53113005F43A6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3A95A94B18EA12D30036779C /* GridClock.h */,
-				77996CD81C94B825006B0FF7 /* GridClock.m */,
+				5038C1EE211C928000BCAC4A /* GermanWordClock.h */,
+				5038C1ED211C928000BCAC4A /* GermanWordClock.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -109,15 +110,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5038C1F0211C928000BCAC4A /* GermanWordClock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A40066718B53112005F43A6 /* Grid Clock */ = {
+		3A40066718B53112005F43A6 /* German Word Clock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A40067F18B53113005F43A6 /* Build configuration list for PBXNativeTarget "Grid Clock" */;
+			buildConfigurationList = 3A40067F18B53113005F43A6 /* Build configuration list for PBXNativeTarget "German Word Clock" */;
 			buildPhases = (
 				3A40066218B53112005F43A6 /* Sources */,
 				3A40066318B53112005F43A6 /* Frameworks */,
@@ -129,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = "Grid Clock";
-			productName = "Grid Clock";
-			productReference = 3A40066818B53112005F43A6 /* Grid Clock.saver */;
+			name = "German Word Clock";
+			productName = "German Word Clock";
+			productReference = 3A40066818B53112005F43A6 /* German Word Clock.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A40066118B53112005F43A6 /* Build configuration list for PBXProject "Grid Clock" */;
+			buildConfigurationList = 3A40066118B53112005F43A6 /* Build configuration list for PBXProject "German Word Clock" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -160,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A40066718B53112005F43A6 /* Grid Clock */,
+				3A40066718B53112005F43A6 /* German Word Clock */,
 			);
 		};
 /* End PBXProject section */
@@ -196,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77996CD91C94B825006B0FF7 /* GridClock.m in Sources */,
+				5038C1EF211C928000BCAC4A /* GermanWordClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +313,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.grid-clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.german-word-clock";
 				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = saver;
 			};
@@ -325,7 +327,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.grid-clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.german-word-clock";
 				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = saver;
 			};
@@ -334,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A40066118B53112005F43A6 /* Build configuration list for PBXProject "Grid Clock" */ = {
+		3A40066118B53112005F43A6 /* Build configuration list for PBXProject "German Word Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A40067D18B53113005F43A6 /* Debug */,
@@ -343,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A40067F18B53113005F43A6 /* Build configuration list for PBXNativeTarget "Grid Clock" */ = {
+		3A40067F18B53113005F43A6 /* Build configuration list for PBXNativeTarget "German Word Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A40068018B53113005F43A6 /* Debug */,

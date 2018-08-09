@@ -1,4 +1,4 @@
-#import "GridClock.h"
+#import "GermanWordClock.h"
 #import <WebKit/WebKit.h>
 
 @implementation GridClock
