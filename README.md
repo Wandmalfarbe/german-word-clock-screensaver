@@ -2,13 +2,14 @@
 
 # German Word Clock Screensaver
 
-A simple word clock screensaver in german for macOS. The time is rounded down so that `15:18` is displayed as `15:15` with the words `ES IST VIERTEL NACH DREI`.
+A simple word clock screensaver in German for macOS. The time is rounded down so that `15:18` is displayed as `15:15` with the words `ES IST VIERTEL NACH DREI`.
 
 ![Word Clock Screensaver](GermanWordClock.png)
 
 ## Installation
 
 - Download the [latest version](https://github.com/Wandmalfarbe/german-word-clock-screensaver/releases/latest) of the screensaver from the releases page.
+- Extract the ZIP file by double-clicking on it.
 - Install the screensaver by double-clicking on the file with the extension `.saver`.
 
 ## Related
