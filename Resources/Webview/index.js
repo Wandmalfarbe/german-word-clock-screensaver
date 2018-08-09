@@ -70,7 +70,7 @@ function setHour(hours, minutes) {
 	const minutesSecond = minutes % 10;
 	const minutesFirst  = (minutes - minutesSecond) / 10;
 
-	if(minutesFirst === 3) {
+	if(minutes >= 30) {
 		hoursSecond++;
 	}
 
@@ -139,8 +139,8 @@ function updateClock() {
 	let hours = date.getHours();
 	const minutes = date.getMinutes();
 
-	/*let hours = 22;
-	let minutes = 55;*/
+	/*let hours = 12;
+	let minutes = 51;*/
 
 	// Convert 24 hour time to 12 hour
 	if (hours >= 13) {

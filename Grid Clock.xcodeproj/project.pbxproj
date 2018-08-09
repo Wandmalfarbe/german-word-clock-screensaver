@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		3A40066E18B53113005F43A6 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A40066D18B53113005F43A6 /* ScreenSaver.framework */; };
 		3A40068318B53129005F43A6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A40068218B53129005F43A6 /* WebKit.framework */; };
+		5038C1E3211C827700BCAC4A /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DA211C827700BCAC4A /* ConfigureSheet.xib */; };
+		5038C1E4211C827700BCAC4A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DB211C827700BCAC4A /* Info.plist */; };
+		5038C1E5211C827700BCAC4A /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DC211C827700BCAC4A /* thumbnail.png */; };
+		5038C1E6211C827700BCAC4A /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DD211C827700BCAC4A /* thumbnail@2x.png */; };
+		5038C1E7211C827700BCAC4A /* thumbnail_source.png in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1DE211C827700BCAC4A /* thumbnail_source.png */; };
+		5038C1EC211C83EF00BCAC4A /* Webview in Resources */ = {isa = PBXBuildFile; fileRef = 5038C1EB211C83EF00BCAC4A /* Webview */; };
 		77996CD91C94B825006B0FF7 /* GridClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 77996CD81C94B825006B0FF7 /* GridClock.m */; };
-		77AD4D2D2041D6A9001100EC /* Webview in Resources */ = {isa = PBXBuildFile; fileRef = 77AD4D2C2041D6A9001100EC /* Webview */; };
-		77AD4D2F2041DBC6001100EC /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77AD4D2E2041DBC6001100EC /* ConfigureSheet.xib */; };
 		77AD4D312041E44A001100EC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AD4D302041E44A001100EC /* AppKit.framework */; };
 		77AD4D332041F756001100EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AD4D322041F756001100EC /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -21,10 +25,13 @@
 		3A40066D18B53113005F43A6 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		3A40068218B53129005F43A6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3A95A94B18EA12D30036779C /* GridClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridClock.h; sourceTree = SOURCE_ROOT; };
-		77996CD61C94B804006B0FF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		5038C1DA211C827700BCAC4A /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		5038C1DB211C827700BCAC4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5038C1DC211C827700BCAC4A /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		5038C1DD211C827700BCAC4A /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		5038C1DE211C827700BCAC4A /* thumbnail_source.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail_source.png; sourceTree = "<group>"; };
+		5038C1EB211C83EF00BCAC4A /* Webview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Webview; sourceTree = "<group>"; };
 		77996CD81C94B825006B0FF7 /* GridClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridClock.m; sourceTree = SOURCE_ROOT; };
-		77AD4D2C2041D6A9001100EC /* Webview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Webview; sourceTree = "<group>"; };
-		77AD4D2E2041DBC6001100EC /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		77AD4D302041E44A001100EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		77AD4D322041F756001100EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -47,6 +54,7 @@
 		3A40065D18B53112005F43A6 = {
 			isa = PBXGroup;
 			children = (
+				5038C1D9211C827700BCAC4A /* Resources */,
 				3A40067318B53113005F43A6 /* Source */,
 				3A40066A18B53112005F43A6 /* Frameworks */,
 				3A40066918B53112005F43A6 /* Products */,
@@ -75,13 +83,23 @@
 		3A40067318B53113005F43A6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				77AD4D2C2041D6A9001100EC /* Webview */,
 				3A95A94B18EA12D30036779C /* GridClock.h */,
 				77996CD81C94B825006B0FF7 /* GridClock.m */,
-				77996CD61C94B804006B0FF7 /* Info.plist */,
-				77AD4D2E2041DBC6001100EC /* ConfigureSheet.xib */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		5038C1D9211C827700BCAC4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5038C1EB211C83EF00BCAC4A /* Webview */,
+				5038C1DA211C827700BCAC4A /* ConfigureSheet.xib */,
+				5038C1DB211C827700BCAC4A /* Info.plist */,
+				5038C1DC211C827700BCAC4A /* thumbnail.png */,
+				5038C1DD211C827700BCAC4A /* thumbnail@2x.png */,
+				5038C1DE211C827700BCAC4A /* thumbnail_source.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +170,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77AD4D2D2041D6A9001100EC /* Webview in Resources */,
-				77AD4D2F2041DBC6001100EC /* ConfigureSheet.xib in Resources */,
+				5038C1EC211C83EF00BCAC4A /* Webview in Resources */,
+				5038C1E7211C827700BCAC4A /* thumbnail_source.png in Resources */,
+				5038C1E4211C827700BCAC4A /* Info.plist in Resources */,
+				5038C1E6211C827700BCAC4A /* thumbnail@2x.png in Resources */,
+				5038C1E3211C827700BCAC4A /* ConfigureSheet.xib in Resources */,
+				5038C1E5211C827700BCAC4A /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +309,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.grid-clock";
 				PRODUCT_NAME = $TARGET_NAME;
@@ -301,7 +323,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.pascalwagler.grid-clock";
 				PRODUCT_NAME = $TARGET_NAME;
