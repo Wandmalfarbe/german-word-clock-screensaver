@@ -4,7 +4,7 @@
 
 A simple word clock screensaver in german for macOS. The time is rounded down so that `15:18` is displayed as `15:15` with the words `ES IST VIERTEL NACH DREI`.
 
-![Word Clock Screensaver](GridClock.png)
+![Word Clock Screensaver](GermanWordClock.png)
 
 ## Installation
 
